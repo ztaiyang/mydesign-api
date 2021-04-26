@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
-var swiperModel =require('../model/swiper')
+var swiperModel =require('../model/swipers')
+// var goodModel =require('../model/goods')
 /* GET home page. */
 router.get('/getSwiper', function(req, res, next) {
     swiperModel.find({}).then(arr=>{
@@ -8,5 +9,7 @@ router.get('/getSwiper', function(req, res, next) {
     })
 
 });
+
+
 
 module.exports = router;

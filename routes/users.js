@@ -4,9 +4,6 @@ var jwt = require('../utils/jwt')
 var moment = require('moment')
 var userModel = require('../model/users')
 /* GET users listing. */
-router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
-});
 
 //注册:
 router.post('/register',function(req,res){
